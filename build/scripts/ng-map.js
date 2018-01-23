@@ -375,7 +375,7 @@ angular.module('ngMap', []);
     parser = Attr2MapOptions;
     return {
       restrict: 'E',
-      require: ['?^map','?^ngMap'],
+      require: ['?^ngMap'],
       link: linkFunc
      };
   };
@@ -456,7 +456,7 @@ angular.module('ngMap', []);
 
     return {
       restrict: 'E',
-      require: ['?^map','?^ngMap'],
+      require: ['?^ngMap'],
       link: linkFunc,
       transclude: true
     }; // return
@@ -698,7 +698,7 @@ angular.module('ngMap', []);
 
     return {
       restrict: 'E',
-      require: ['?^map','?^ngMap'],
+      require: ['?^ngMap'],
       compile: function(element) {
         void 0;
         setCustomMarker();
@@ -903,7 +903,7 @@ angular.module('ngMap', []);
 
     return {
       restrict: 'E',
-      require: ['?^map','?^ngMap'],
+      require: ['?^ngMap'],
       link: linkFunc
     };
   }; // var directions
@@ -948,7 +948,7 @@ angular.module('ngMap', []);
 
     return {
       restrict: 'E',
-      require: ['?^map','?^ngMap'],
+      require: ['?^ngMap'],
 
       link: function(scope, element, attrs, mapController) {
         mapController = mapController[0]||mapController[1];
@@ -1031,7 +1031,7 @@ angular.module('ngMap', []);
 
     return {
       restrict: 'E',
-      require: ['?^map','?^ngMap'],
+      require: ['?^ngMap'],
 
       link: function(scope, element, attrs, mapController) {
         mapController = mapController[0]||mapController[1];
@@ -1082,7 +1082,7 @@ angular.module('ngMap', []);
 
     return {
       restrict: 'E',
-      require: ['?^map','?^ngMap'],
+      require: ['?^ngMap'],
 
       link: function(scope, element, attrs, mapController) {
         mapController = mapController[0]||mapController[1];
@@ -1124,7 +1124,7 @@ angular.module('ngMap', []);
     var parser = Attr2MapOptions;
     return {
       restrict: 'E',
-      require: ['?^map','?^ngMap'],
+      require: ['?^ngMap'],
 
       link: function(scope, element, attrs, mapController) {
         mapController = mapController[0]||mapController[1];
@@ -1369,7 +1369,7 @@ angular.module('ngMap', []);
 
     return {
       restrict: 'E',
-      require: ['?^map','?^ngMap'],
+      require: ['?^ngMap'],
       link: linkFunc
     };
 
@@ -1424,7 +1424,7 @@ angular.module('ngMap', []);
 
     return {
       restrict: 'E',
-      require: ['?^map','?^ngMap'],
+      require: ['?^ngMap'],
 
       link: function(scope, element, attrs, mapController) {
         mapController = mapController[0]||mapController[1];
@@ -1472,7 +1472,7 @@ angular.module('ngMap', []);
     var parser = Attr2MapOptions;
     return {
       restrict: 'E',
-      require: ['?^map','?^ngMap'],
+      require: ['?^ngMap'],
 
       link: function(scope, element, attrs, mapController) {
         mapController = mapController[0] || mapController[1];
@@ -1633,7 +1633,7 @@ angular.module('ngMap', []);
 
     return {
       restrict: 'E',
-      require: ['?^map','?^ngMap'],
+      require: ['?^ngMap'],
 
       link: function(scope, element, attrs, mapController) {
         mapController = mapController[0]||mapController[1];
@@ -1720,7 +1720,6 @@ angular.module('ngMap', []);
     };
   };
 
-  angular.module('ngMap').directive('map', [mapDirective]);
   angular.module('ngMap').directive('ngMap', [mapDirective]);
 })();
 
@@ -1756,7 +1755,7 @@ angular.module('ngMap', []);
 
     return {
       restrict: 'E',
-      require: ['?^map','?^ngMap'],
+      require: ['?^ngMap'],
 
       link: function(scope, element, attrs, mapController) {
         mapController = mapController[0]||mapController[1];
@@ -1891,7 +1890,7 @@ angular.module('ngMap', []);
 
     return {
       restrict: 'E',
-      require: ['^?map','?^ngMap'],
+      require: ['?^ngMap'],
       link: linkFunc
     };
   };
@@ -1925,7 +1924,7 @@ angular.module('ngMap', []);
 
     return {
       restrict: 'E',
-      require: ['?^map','?^ngMap'],
+      require: ['?^ngMap'],
 
       link: function(scope, element, attrs, mapController) {
         mapController = mapController[0]||mapController[1];
@@ -2196,7 +2195,7 @@ angular.module('ngMap', []);
 
     return {
       restrict: 'E',
-      require: ['?^map','?^ngMap'],
+      require: ['?^ngMap'],
       link: linkFunc
      }; // return
   };
@@ -2293,7 +2292,7 @@ angular.module('ngMap', []);
 
     return {
       restrict: 'E',
-      require: ['?^map','?^ngMap'],
+      require: ['?^ngMap'],
       link: linkFunc
     };
 
@@ -2335,7 +2334,7 @@ angular.module('ngMap', []);
 
     return {
       restrict: 'E',
-      require: ['?^map','?^ngMap'],
+      require: ['?^ngMap'],
 
       link: function(scope, element, attrs, mapController) {
         mapController = mapController[0]||mapController[1];
@@ -2389,7 +2388,7 @@ angular.module('ngMap', []);
 
     return {
       restrict: 'E',
-      require: ['?^map','?^ngMap'],
+      require: ['?^ngMap'],
 
       link: function(scope, element, attrs, mapController) {
         mapController = mapController[0]||mapController[1];
